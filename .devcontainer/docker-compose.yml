@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:latest
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+
+    # Add "forwardPorts": ["5432"] to **devcontainer.json** to forward MongoDB locally.
+    # (Adding the "ports" property to this file will not forward from a Codespace.)
+
+volumes:
+  postgres-data:

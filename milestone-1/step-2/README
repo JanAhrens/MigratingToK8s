@@ -1,0 +1,9 @@
+> apt-get install tomcat9 tomcat9-admin
+
+```
+export CATALINA_HOME=/usr/share/tomcat9
+export CATALINA_BASE=/var/lib/tomcat9
+export CATALINA_TMPDIR=/tmp
+export JAVA_OPTS=-Djava.awt.headless=true
+sudo -E /usr/libexec/tomcat9/tomcat-start.sh
+```

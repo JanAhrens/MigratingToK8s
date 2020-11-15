@@ -1,5 +1,6 @@
 {
 	"name": "Java",
+	"dockerComposeFile": "docker-compose.yml",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
