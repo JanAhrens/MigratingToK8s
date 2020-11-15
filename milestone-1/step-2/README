@@ -1,5 +1,3 @@
-> apt-get install tomcat9 tomcat9-admin
-
 ```
 export CATALINA_HOME=/usr/share/tomcat9
 export CATALINA_BASE=/var/lib/tomcat9
