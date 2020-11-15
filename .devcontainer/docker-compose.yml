@@ -26,18 +26,15 @@ services:
     # (Adding the "ports" property to this file will not forward from a Codespace.)
 
   db:
-    image: postgres:latest
+    image: mariadb:10.4
     restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - mariadb-data:/var/lib/mysql
     environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
-      POSTGRES_DB: postgres
-    network_mode: host
-
-    # Add "forwardPorts": ["5432"] to **devcontainer.json** to forward MongoDB locally.
-    # (Adding the "ports" property to this file will not forward from a Codespace.)
+      MYSQL_ROOT_PASSWORD: mariadb
+      MYSQL_DATABASE: mariadb
+      MYSQL_USER: mariadb
+      MYSQL_PASSWORD: mariadb
 
 volumes:
-  postgres-data:
+  mariadb-data:

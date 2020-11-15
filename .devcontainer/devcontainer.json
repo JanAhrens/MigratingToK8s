@@ -11,7 +11,9 @@
 	
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"vscjava.vscode-java-pack"
+		"vscjava.vscode-java-pack",
+		"mtxr.sqltools",
+		"mtxr.sqltools-driver-mysql"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
